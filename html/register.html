@@ -1,0 +1,119 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Admission form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body class="admission-body">
+	<div id="box-model">
+  		<img src="../images/admission form kamane.jpg" width="100%">
+      <div class="small-font push-left">
+        Form No
+        <input class="" type="number" name="formNumber" placeholder="To be field by administrator"><br>
+      </div><br>
+	</div>
+  <hr>
+  <container id="form-body"></div>
+    <h2 text-align="left">Student Information:</h2>
+    <div class="form-group">
+  	 <form id="admission-form" action="/register" method="POST">
+      <div class="input-field">
+        <label for="name" required>Name of the Student</label><br>
+        <input class="input-box" id="name-label" type="text" placeholder="your name" name="name">
+      </div><br>
+      <div class="input-field">
+        <label for="DOB">Date of Birth</label><br>
+        <input class="input-box" id="DOB" type="Date" placeholder="your date of Birth" name="dateOfBirth"><br><br>
+      </div>
+    	<div class="input-field">
+        <label for="class">Admission Saught in class</label>
+        <input class="input-box" type="number" name="grade"> 
+      </div>
+      <div class="input-field">
+        <label for="Previous Class">Previous Calss</label>
+        <input class="input-box" type="number" name="previousClass"> 
+      </div>
+      <div class="input-field">
+        <label for="Percentage">Percentage</label>
+        <input class="input-box" type="Percentage" name="percentage"> 
+      </div>
+      <div class="input-field">
+        <label for="Position">Position</label>
+        <input class="input-box" type="Position" name="position"> 
+      </div>
+      <div class="input-field">
+        <label for="">Student Interest</label>
+        Singing<input type="checkbox" name="singing">
+        Dancing<input type="checkbox" name="dancing">
+        Sports<input  type="checkbox" name="sports">
+        Art & Craft<input type="checkbox" name="art">
+      </div>
+      <div class="input-field">
+        <label for="Any-other">Any Other interest</label>
+        <input class="input-box" type="text" name="otherInterest" placeholder="mention any other interests"> 
+      </div>
+      <div class="input-field">
+        <label for="speciality">Any special ability/problem to be taken care of</label>
+        <input class="input-box" type="text" name="specialQuality"> 
+      </div>
+      <h2>Guardian Information:</h2>
+      <div class="input-field">
+        <label for="Father's Name">Father's Name</label>
+        <input class="input-box" type="text" name="fatherName">
+      </div>
+      <div class="input-field">
+        <label for="Father's Profession">Father's Profession</label>
+        <input class="input-box" type="text" name="fatherProfession">
+      </div>
+      <div class="input-field">
+        <label for="Mother-name">Mother's Name</label>
+        <input class="input-box" type="" name="motherName">
+      </div>
+      <div class="input-field">
+        <label for="Mother-profession">Mother's Profession</label>
+        <input class="input-box" type="" name="motherProfession">
+      </div>
+      <div class="input-field">
+        <label for="Address">Permannent Address</label>
+        <input class="input-box" type="text" name="address">
+      </div>
+      <div class="input-field">
+        <label for="Phone">Mobile Number</label>
+        <input class="input-box" type="number" name="phoneNumber">
+      </div>
+      <div class="input-field">
+        <label for="local-guardian-name">Local Gardien's Name(if any)</label>
+        <input class="input-box" type="text" name="guardianName">
+      </div>
+      <div class="input-field">
+        <label for="Guardian-number">Guardian-number</label>
+        <input class="input-box" type="number" name="guardianNumber">
+      </div>
+      <div class="input-field">
+        <label for="relation">Relation to the guardian</label>
+        <input class="input-box" type="text" name="relationToTheGuardian">
+      </div>
+      <div class="input-field">
+        <label for="guardian-address">Guardian address</label>
+        <input class="input-box" type="text" name="guardianAddress">
+      </div>
+      <div class="small-font">
+        <input type="checkbox" name="declaration">By ticking this box I hereby declare that I shall adhere to all the rules and regulations of the school. I shall be ready to suffer any penalty in case my child is found to be breaking them.
+      </div>
+      <br>
+      <br>
+      <hr>
+      <button type="button" class="btn btn-primary submit">SUBMIT</button>
+    </div>
+  </container>
+  <footer>Optionally, You may <a class="footer-link" target="_blank" href="../images/admission form kamane-full.jpg">click here</a> to download the admission form</footer>
+  <script type="text/javascript">
+    fetch('http://localhost:3030/register')
+    .then(response => res.json())
+    .then(console.log)
+  </script>
+</body>
+</html>

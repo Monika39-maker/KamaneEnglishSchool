@@ -1,0 +1,289 @@
+	`/*index page css*/
+
+* {
+	margin: 0px
+	padding: 0px;
+	box-sizing: border-box;
+}
+.index-body {
+	background: #60a0f0;
+	margin: 2%
+}
+
+.index-header {
+	text-align: center;
+	
+}
+
+
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: 'Poppins', sans-serif;
+	background-color: rgba(9, 9, 9, 0.65);
+}
+
+.footer-link {
+	text-decoration: underline;
+	color: black
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 100%
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+.burger {
+	display: none;
+	cursor: pointer
+}
+
+.burger div{
+	width: 25px;
+	height: 5px;
+	background-color: black;
+	margin: 5px;
+	transition: all 0.3x ease;
+}
+
+#main-img {
+	width: 100%;
+	height: 300px;
+	padding-top: 10px;
+	border-width: 5px;
+	border-color: black
+}
+
+#wrapper {
+	display: inline-flex;
+	grid-gap: 5px;
+	text-align: center;
+	background: grey;
+}
+
+.box-1 {
+	background: #C3D69B;
+}
+
+.box-2 {
+	background: #B3A2C7;
+}
+
+.box-3 {
+	background: #D996FA;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	content: white
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 50px;
+}
+
+.submit {
+	margin-left: 45%
+}
+
+/*about page CSS*/
+.about-body {
+	margin: 10%;
+	text-align: center;
+	background-image: url("./images/kids jumpin edited.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+/*SCHEDULE CSS */
+.schedule-body {
+	background: url(./images/watch.jpg);
+	margin: 5%;
+	border-style: solid;
+	padding: 5%;
+	font-weight: bold;
+}
+
+/* curriculum css */
+
+.curriculum {
+	text-align: center;
+	background-image: url("./images/color pencil border.jpg");
+}
+
+/*EVENT CSS */
+.event-body {
+	background: url(kids-in-stage-small);
+}
+/*eVENTS PAGE CSS */
+.events-body {
+	background: linear-gradient(to left, #e66465, #9198e5);
+	text-align: center;
+	margin: 10%;
+}
+
+
+/*REGISTRATION PAGE CSS*/
+.admission-body {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 3px;
+  text-align: center;
+  font-size: 5vh;
+}
+
+#Form-Number {
+	width: 5%;
+	padding-left: 2%;
+	font-size: 10px
+}
+
+.input-field {
+	display: flex;
+	grid-gap: 5px
+}
+
+.input-box {
+	width: 70%;
+	height: 25px;
+}
+
+#description {
+  font-size: 2vw;
+  font-style: italic;
+}
+#admission-form {
+
+	padding-left: 5%;
+	padding-top: 3%;
+	text-align: left;
+	font-size: 0.5em
+}
+
+.admission-body {
+	background: linear-gradient(180deg, #826FFF, #09b7ce);
+}
+
+.small-font {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.checkbox {
+	width: 150px
+}
+}
+#submit {
+  display: grid;
+  align-items: center;
+  cursor: pointer 
+}
+/*ENVIRONMENT PROJECTS CSS */
+.projects-body {
+	background: linear-gradient(#0F2E15, #51FA70);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+	margin: 10%;
+
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+	.index-body {
+		overflow-x: hidden;
+	}
+
+	
+
+
+
+	.nav-links {
+		position: absolute;
+		right: 2%;
+		top: 31vh;
+		height: 90vh;
+		width: 30%;
+		background-color: rgba(9, 9, 9, 0.65);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+/*	.nav-links li {
+		display: none;
+	}*/
+
+
+	.burger {
+		display: block;
+		cursor: pointer;
+		padding-left: 85%;
+
+	}
+
+
+	#wrapper {
+		display: flex;
+		flex-direction: column;
+
+	}
+}
+.nav-active{
+	transform: translateX(0%);
+}
+	
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-8px,6px);
+
+}
+.toggle .line2 {
+	opacity: 0;
+
+}
+
+.toggle .line3 {
+	transform: rotate(40deg) translate(-8px,-6px);
+
+}
+
+
+
+
